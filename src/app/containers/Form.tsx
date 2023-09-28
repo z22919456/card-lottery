@@ -10,7 +10,8 @@ const Form = () => {
   const handleFormSubmit: FormEventHandler<HTMLFormElement> = (e) => {
     // get item in form, and set to searchParams
     e.preventDefault();
-    const string = e.target.item.value as string;
+    const string = e.currentTarget.item.value;
+
     // split string to array by \n
     const itemArray = string.split("\n");
     const newSearchParams = new URLSearchParams();
