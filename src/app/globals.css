@@ -2,26 +2,59 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.cardBack {
+  @apply cursor-pointer;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.card {
+  @apply h-full w-full rounded-2xl shadow-xl transform absolute;
+  backface-visibility: hidden;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/*翻轉屬性*/
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+.transform-style-3d-active {
+  transform: rotateY(180deg);
+}
+.transform-rotateY-180 {
+  transform: rotateY(180deg);
+}
+
+.card-0 {
+  background-color: #ffff99;
+}
+.card-1 {
+  background-color: #ccffcc;
+}
+.card-2 {
+  background-color: #99ccff;
+}
+.card-3 {
+  background-color: #ffccff;
+}
+.card-4 {
+  background-color: #ffcccc;
+}
+.card-5 {
+  background-color: #ffcc99;
+}
+.card-6 {
+  background-color: #f5f5f5;
+}
+.card-7 {
+  background-color: #e6e6e6;
+}
+.card-8 {
+  background-color: #ff99cc;
+}
+.card-9 {
+  background-color: #ff99ff;
+}
+.card-10 {
+  background-color: #ff9966;
+}
+.card-11 {
+  background-color: #ff9900;
 }
