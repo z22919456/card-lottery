@@ -17,8 +17,7 @@ export default function Home() {
   return (
     <div className="">
       <Link href="/" className="">
-        {" "}
-        {"<-"}
+        {"<- 返回"}
       </Link>
       <div className="container grid gap-10 p-10 grid-cols-3 md:grid-cols-4 m-auto">
         {items.map((item, index) => (
