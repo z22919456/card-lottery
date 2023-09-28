@@ -30,15 +30,12 @@ const Form = () => {
         <textarea
           id="item"
           name="item"
+          placeholder={`選項1
+選項2
+選項3`}
           className="h-80 text-gray-300 rounded-lg bg-slate-500 p-3"
         ></textarea>
-        <p className="text-gray-400">
-          每個選項之間請使用換行分隔
-          <br /> 例如:
-          <br /> 選項1
-          <br /> 選項2
-          <br /> 選項3
-        </p>
+        <p className="text-gray-400">＊每個選項之間請使用換行分隔</p>
         <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ">
           確定
         </button>
